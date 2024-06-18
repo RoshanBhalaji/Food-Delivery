@@ -1,0 +1,57 @@
+.place-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .place-order-left, .place-order-right {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .multi-fields {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .multi-fields input {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .place-order {
+      flex-direction: column;
+    }
+    .multi-fields {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .place-order-left, .place-order-right {
+      padding: 5px;
+    }
+    .multi-fields input {
+      min-width: 100%;
+    }
+  }
+  

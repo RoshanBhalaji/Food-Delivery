@@ -1,0 +1,66 @@
+/* Order.css */
+
+.order-container {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.order-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.order-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.order-item:hover {
+  transform: translateY(-5px);
+}
+
+.order-details {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.order-address {
+  margin-top: 15px;
+}
+
+.order-items {
+  margin-top: 15px;
+}
+
+.order-items ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-items li {
+  margin-bottom: 5px;
+}
+
+.order-items p {
+  margin: 5px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .order-item {
+    padding: 15px;
+  }
+}

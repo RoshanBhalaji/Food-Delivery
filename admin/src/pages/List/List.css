@@ -1,0 +1,33 @@
+.list-container {
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as per your design */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  p{
+    cursor: pointer;
+  }
+  
+  .list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .list-table-format.title {
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+  }
+  
+  .list-table-format img {
+    max-width: 100px; /* Adjust max-width of image */
+    height: auto;
+    border-radius: 6px;
+  }
+  

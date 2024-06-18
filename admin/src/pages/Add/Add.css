@@ -1,0 +1,163 @@
+/* Container styling */
+.add {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 100%; /* Take full width of the viewport */
+    max-width: 600px; /* Limit maximum width */
+    margin: 50px auto; /* Center horizontally with top margin */
+  }
+  
+  /* Form container styling */
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between elements */
+    width: 100%;
+  }
+  
+  /* Upload image section styling */
+  .add-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #ccc; /* Dashed border for image upload */
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .add-img-upload:hover {
+    border-color: #007BFF; /* Highlight border on hover */
+  }
+  
+  .add-img-upload p {
+    margin: 0;
+    font-size: 18px; /* Larger font size for text */
+    color: #555; /* Darker text color */
+  }
+  
+  .add-img-upload label {
+    margin-top: 10px;
+  }
+  
+  .add-img-upload img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .add-img-upload input[type="file"] {
+    display: none;
+  }
+  
+  /* Input field and textarea styling */
+  .add-product-name,
+  .add-product-description,
+  .add-category,
+  .add-price {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-product-name p,
+  .add-product-description p,
+  .add-category p,
+  .add-price p {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .add-product-name input,
+  .add-category select,
+  .add-price input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-product-name input:focus,
+  .add-category select:focus,
+  .add-price input:focus {
+    outline: none;
+    border-color: #007BFF; /* Highlight border on focus */
+  }
+  
+  .add-product-description textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Allow vertical resizing */
+    transition: border-color 0.3s;
+  }
+  
+  .add-product-description textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  /* Category and Price section styling */
+  .add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .add-category select,
+  .add-price input {
+    flex: 1; /* Fill remaining space */
+  }
+  
+  /* Submit button styling */
+  .add-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .add-submit button {
+    padding: 12px 24px; /* Adjust padding as needed */
+    min-width: 120px; /* Set a minimum width */
+    max-width: 100%; /* Limit maximum width to container width */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-submit button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .add-img-upload img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .add-submit button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
