@@ -37,7 +37,7 @@ const Verify = () => {
   return (
     <div className="verify">
       {loading ? (
-        <div className="spinner">Loading...</div> // Simple spinner text
+        <div className="spinner"></div> // Simple spinner text
       ) : error ? (
         <div className="error-message">{error}</div>
       ) : (
